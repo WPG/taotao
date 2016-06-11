@@ -1,0 +1,27 @@
+package com.taotao.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.taotao.common.entity.EUTreeNode;
+import com.taotao.service.ItemCatService;
+
+/**
+ *商品分类管理controller
+ */
+@Controller
+@RequestMapping("/item/cat")
+public class ItemCatController {
+
+	@Autowired
+	private ItemCatService catService;
+	
+	@RequestMapping("/list")
+	public List<EUTreeNode> getCatList() {
+		return null;
+	}
+	
+}

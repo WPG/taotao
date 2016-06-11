@@ -1,0 +1,25 @@
+package com.taotao.portal.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.util.HttpClientUtil;
+import com.taotao.portal.entity.Order;
+import com.taotao.portal.service.OrderService;
+
+/**
+ * 订单处理Service
+ */
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Override
+	public String createOrder(Order order) {
+		//调用taotao-order的服务提交订单
+		HttpClientUtil.doPostJson(url, json)
+		return null;
+	}
+
+	
+	
+
+}

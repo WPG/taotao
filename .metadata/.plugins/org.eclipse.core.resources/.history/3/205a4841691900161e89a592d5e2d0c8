@@ -1,0 +1,20 @@
+package com.taotao.portal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.taotao.portal.service.CartService;
+
+@Controller
+@RequestMapping("/order")
+public class OrderController {
+	
+	@Autowired
+	private CartService cartService;
+
+	@RequestMapping("/order-cart")
+	public String showOrderCart(){
+		return "order-cart";
+	}
+}

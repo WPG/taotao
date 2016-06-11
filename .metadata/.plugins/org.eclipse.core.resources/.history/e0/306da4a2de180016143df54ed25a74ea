@@ -1,0 +1,7 @@
+package com.taotao.order.entity;
+
+import com.taotao.entity.TbOrder;
+
+public class Order extends TbOrder {
+
+}

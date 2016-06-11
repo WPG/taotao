@@ -1,0 +1,12 @@
+package com.taotao.controller;
+
+import com.taotao.service.ItemCatService;
+
+/**
+ *商品分类管理controller
+ */
+public class ItemCatController {
+
+	private ItemCatService catService;
+	
+}
